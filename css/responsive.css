@@ -1,0 +1,471 @@
+/* Responsive Styles - Mobile First */
+
+/* ===== TABLET (768px+) ===== */
+@media (min-width: 768px) {
+
+    /* Navigation */
+    .nav {
+        display: block;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .mobile-nav,
+    .mobile-nav__overlay {
+        display: none;
+    }
+
+    /* Grid */
+    .grid--2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Two Column Layout */
+    .two-column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Hero */
+    .hero__title {
+        font-size: var(--text-4xl);
+    }
+
+    /* Welcome Section */
+    .welcome {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Location Teaser */
+    .location-teaser {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Experiences Preview */
+    .experiences-preview__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Room Detail */
+    .room-detail {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Experience Detail */
+    .experience-detail {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* City Map */
+    .city-map-page {
+        grid-template-columns: 300px 1fr;
+    }
+
+    /* Footer */
+    .footer__grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+/* ===== DESKTOP (1024px+) ===== */
+@media (min-width: 1024px) {
+
+    /* Container */
+    .container {
+        padding: 0 var(--space-md);
+    }
+
+    /* Grid */
+    .grid--3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Hero */
+    .hero__title {
+        font-size: var(--text-5xl);
+    }
+
+    /* Sections */
+    .section {
+        padding: var(--space-xl) 0;
+    }
+
+    /* City Map Sidebar */
+    .city-map-page {
+        grid-template-columns: 350px 1fr;
+    }
+
+    /* Experiences Grid */
+    .experiences-preview__grid .experience-card:first-child {
+        min-height: 600px;
+    }
+}
+
+/* ===== LARGE DESKTOP (1440px+) ===== */
+@media (min-width: 1440px) {
+
+    /* Container */
+    .container {
+        padding: 0 var(--space-lg);
+    }
+
+    /* Grid */
+    .grid--4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Sections */
+    .section--lg {
+        padding: var(--space-2xl) 0;
+    }
+
+    /* Room Detail */
+    .room-detail__amenities-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===== MOBILE ONLY (below 768px) ===== */
+@media (max-width: 767px) {
+
+    /* Header */
+    .header__container {
+        padding: 0 var(--space-sm);
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 100svh;
+    }
+
+    .hero__title {
+        font-size: var(--text-3xl);
+    }
+
+    .hero__subtitle {
+        font-size: var(--text-base);
+    }
+
+    /* Weather Widget */
+    .weather-widget {
+        top: 80px;
+        right: var(--space-sm);
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .weather-widget__temp {
+        font-size: var(--text-xl);
+    }
+
+    .weather-widget__icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Sections */
+    .section {
+        padding: var(--space-md) 0;
+    }
+
+    .section--lg {
+        padding: var(--space-lg) 0;
+    }
+
+    .section-header {
+        margin-bottom: var(--space-md);
+    }
+
+    /* Welcome Section */
+    .welcome {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .welcome__content {
+        max-width: 100%;
+    }
+
+    .welcome__features {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+    /* Location Teaser */
+    .location-teaser {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .location-teaser__map {
+        height: 300px;
+        order: -1;
+    }
+
+    /* Experiences Preview */
+    .experiences-preview__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experiences-preview__grid .experience-card:first-child {
+        grid-row: auto;
+        min-height: 300px;
+    }
+
+    .experience-card {
+        height: 300px;
+    }
+
+    /* Room Detail */
+    .room-detail {
+        grid-template-columns: 1fr;
+        padding: var(--space-sm);
+    }
+
+    .room-detail:nth-child(even) {
+        direction: ltr;
+    }
+
+    .room-detail__specs {
+        gap: var(--space-sm);
+    }
+
+    .room-detail__amenities-list {
+        grid-template-columns: 1fr;
+    }
+
+    .room-detail__pricing {
+        flex-direction: column;
+        gap: var(--space-sm);
+        text-align: center;
+    }
+
+    /* Experience Detail */
+    .experience-detail {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .experience-detail:nth-child(even) {
+        direction: ltr;
+    }
+
+    .experience-detail__meta {
+        justify-content: center;
+    }
+
+    .experience-detail__content {
+        padding: var(--space-sm) 0;
+    }
+
+    /* City Map */
+    .city-map-page {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .city-map__sidebar {
+        max-height: 40vh;
+        border-right: none;
+        border-bottom: 1px solid var(--light-gray);
+    }
+
+    .city-map__map-container {
+        min-height: 50vh;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form__container {
+        padding: var(--space-md);
+    }
+
+    /* Form Row */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--space-lg) 0 var(--space-md);
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+        text-align: center;
+    }
+
+    .footer__brand {
+        max-width: 100%;
+    }
+
+    .footer__social {
+        justify-content: center;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__legal {
+        justify-content: center;
+    }
+
+    /* Newsletter */
+    .newsletter__form {
+        flex-direction: column;
+    }
+
+    /* Gallery */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 12px 24px;
+    }
+
+    .btn--lg {
+        padding: 14px 32px;
+    }
+
+    /* Place Card */
+    .place-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .place-card__actions {
+        justify-content: center;
+        margin-top: var(--space-sm);
+    }
+}
+
+/* ===== TOUCH DEVICE OPTIMIZATIONS ===== */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Remove hover effects on touch devices */
+    .card:hover {
+        transform: none;
+    }
+
+    .experience-card__text,
+    .experience-card__link {
+        opacity: 1;
+    }
+
+    .experience-card__content {
+        transform: translateY(0);
+    }
+
+    /* Ensure touch targets are at least 44x44px */
+    .btn {
+        min-height: 44px;
+    }
+
+    .nav__link {
+        padding: var(--space-sm);
+    }
+
+    .mobile-nav__link {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__social-link {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* ===== LANDSCAPE MOBILE ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: var(--space-xl) 0;
+    }
+
+    .hero__title {
+        font-size: var(--text-2xl);
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* ===== HIGH CONTRAST / ACCESSIBILITY ===== */
+@media (prefers-contrast: high) {
+    :root {
+        --gold: #B8941E;
+        --warm-gray: #4A4A4A;
+    }
+
+    .btn {
+        border-width: 3px;
+    }
+
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: 3px solid var(--gold);
+        outline-offset: 2px;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+
+    .header,
+    .footer,
+    .scroll-indicator,
+    .weather-widget,
+    .mobile-nav,
+    .nav-toggle,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 20pt 0;
+    }
+
+    .hero__background {
+        display: none;
+    }
+
+    .hero__content {
+        color: #000;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .section {
+        padding: 20pt 0;
+        page-break-inside: avoid;
+    }
+}
