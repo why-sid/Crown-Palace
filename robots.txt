@@ -1,0 +1,9 @@
+# Robots.txt for The Crown Palace
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://gmresidency.com/sitemap.xml
+
+# Crawl-delay (optional)
+Crawl-delay: 1

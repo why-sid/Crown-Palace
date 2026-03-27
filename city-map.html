@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Varanasi with our interactive city map. Discover ghats, temples, shopping areas, and attractions near The Crown Palace with directions.">
+    <meta name="keywords" content="Varanasi map, ghats, temples Varanasi, tourist places Varanasi">
+    <meta name="author" content="The Crown Palace">
+
+    <meta property="og:title" content="Explore Varanasi | The Crown Palace">
+    <meta property="og:description" content="Interactive map of sacred sites, ghats, and attractions in Varanasi.">
+    <meta property="og:url" content="https://gmresidency.com/city-map.html">
+
+    <title>Explore Varanasi | The Crown Palace</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="header header--scrolled" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">The Crown <span>Palace</span></a>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="rooms.html" class="nav__link">Rooms & Suites</a></li>
+                    <li><a href="experiences.html" class="nav__link">Experiences</a></li>
+                    <li><a href="city-map.html" class="nav__link nav__link--active">Explore Varanasi</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav-toggle__line"></span>
+                <span class="nav-toggle__line"></span>
+                <span class="nav-toggle__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav__overlay" id="navOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <ul class="mobile-nav__list">
+            <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+            <li><a href="rooms.html" class="mobile-nav__link">Rooms & Suites</a></li>
+            <li><a href="experiences.html" class="mobile-nav__link">Experiences</a></li>
+            <li><a href="city-map.html" class="mobile-nav__link">Explore Varanasi</a></li>
+            <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main" style="padding-top: 80px;">
+        <div class="container section">
+            <!-- Page Header -->
+            <div class="page-intro">
+                <h1 class="page-intro__title">Explore Varanasi</h1>
+                <p class="page-intro__text">Discover sacred sites, ancient temples, vibrant markets, and local favorites
+                    near our hotel</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="city-map__filters" aria-label="Filter places by category">
+                <!-- Filters will be populated by JavaScript -->
+            </div>
+
+            <!-- Places Grid -->
+            <div class="city-map__places places-grid" aria-label="List of places">
+                <!-- Places will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/utils.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

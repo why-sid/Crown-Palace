@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The Crown Palace - Experience comfortable accommodation in the holy city of Varanasi. A welcoming hotel offering modern amenities and spiritual serenity near Kaal Bhairav Mandir.">
+  <meta name="keywords" content="hotel Varanasi, The Crown Palace, Kaal Bhairav, accommodation Varanasi, Benaras hotel">
+  <meta name="author" content="The Crown Palace">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Crown Palace | Comfortable Hotel in Varanasi">
+  <meta property="og:description"
+    content="Experience comfortable accommodation in the holy city of Varanasi near Kaal Bhairav Mandir.">
+  <meta property="og:image" content="images/hero-varanasi.png">
+  <meta property="og:url" content="https://gmresidency.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Crown Palace | Comfortable Hotel in Varanasi">
+  <meta name="twitter:description"
+    content="Experience comfortable accommodation in the holy city of Varanasi near Kaal Bhairav Mandir.">
+  <meta name="twitter:image" content="images/hero-varanasi.png">
+
+  <title>The Crown Palace | Comfortable Hotel in Varanasi</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "The Crown Palace",
+    "description": "Comfortable hotel near Kaal Bhairav Mandir in Varanasi",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Kaal Bhairav Mandir",
+      "addressLocality": "Varanasi",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "221001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "25.319179983959174",
+      "longitude": "83.01780559149609"
+    },
+    "url": "https://thecrownpalace.com",
+    "telephone": "+91-8176806309",
+    "priceRange": "$$$$",
+    "starRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header header--transparent" id="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        The Crown <span>Palace</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+          <li><a href="rooms.html" class="nav__link">Rooms & Suites</a></li>
+          <li><a href="experiences.html" class="nav__link">Experiences</a></li>
+          <li><a href="city-map.html" class="nav__link">Explore Varanasi</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav__overlay" id="navOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="rooms.html" class="mobile-nav__link">Rooms & Suites</a></li>
+      <li><a href="experiences.html" class="mobile-nav__link">Experiences</a></li>
+      <li><a href="city-map.html" class="mobile-nav__link">Explore Varanasi</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__background">
+        <img src="images/hero-varanasi.png" alt="Stunning view of Varanasi ghats at golden hour from The Crown Palace"
+          loading="eager">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <!-- Weather Widget -->
+      <div class="weather-widget" id="weatherWidget">
+        <div class="weather-widget__location">Varanasi</div>
+        <div class="weather-widget__main">
+          <img class="weather-widget__icon" id="weatherIcon" src="" alt="Weather icon">
+          <span class="weather-widget__temp" id="weatherTemp">--°C</span>
+        </div>
+        <div class="weather-widget__condition" id="weatherCondition">Loading...</div>
+      </div>
+
+      <div class="hero__content fade-in">
+        <h1 class="hero__title">The Crown Palace</h1>
+        <p class="hero__subtitle">Your Comfortable Stay in the Holy City</p>
+        <div class="hero__cta">
+          <a href="rooms.html" class="btn btn--primary btn--lg">Explore Rooms</a>
+          <a href="experiences.html" class="btn btn--outline-white btn--lg">Discover Experiences</a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span class="scroll-indicator__text">Scroll</span>
+        <div class="scroll-indicator__icon"></div>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="section section--lg section--cream" id="welcome">
+      <div class="container">
+        <div class="welcome">
+          <div class="welcome__content fade-in">
+            <span class="section-label">Welcome</span>
+            <h2 class="section-title">A Sanctuary of Tranquility</h2>
+            <div class="divider"></div>
+            <p class="lead">
+              Located near the sacred Kaal Bhairav Mandir, The Crown Palace offers a comfortable
+              experience in the heart of Varanasi's spiritual heritage.
+            </p>
+            <p>
+              Our heritage property has been meticulously restored to preserve its architectural grandeur while
+              offering world-class amenities. Each morning, witness the ethereal beauty of sunrise over the sacred
+              river, and each evening, immerse yourself in the mesmerizing Ganga Aarti from our exclusive viewing
+              terraces.
+            </p>
+            <p>
+              Whether you seek spiritual renewal, cultural immersion, or simply a serene escape, The Heritage
+              Varanasi promises an unforgettable journey into the heart of India's most sacred city.
+            </p>
+
+            <div class="welcome__features">
+              <div class="welcome__feature">
+                <svg class="welcome__feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                <div class="welcome__feature-title">Heritage Architecture</div>
+              </div>
+              <div class="welcome__feature">
+                <svg class="welcome__feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.4-.1.9.3 1.1l5.7 3.4-3.2 3.2-2.3-.4c-.4-.1-.8.1-1 .4l-.5.8c-.2.3-.1.7.2 1l3.3 2.1 2.1 3.3c.2.3.6.4 1 .2l.8-.5c.3-.2.5-.6.4-1l-.4-2.3 3.2-3.2 3.4 5.7c.2.4.7.5 1.1.3l.5-.3c.4-.2.6-.6.5-1.1z" />
+                </svg>
+                <div class="welcome__feature-title">Ganges Views</div>
+              </div>
+              <div class="welcome__feature">
+                <svg class="welcome__feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.5">
+                  <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
+                  <line x1="16" y1="8" x2="2" y2="22" />
+                  <line x1="17.5" y1="15" x2="9" y2="15" />
+                </svg>
+                <div class="welcome__feature-title">Curated Experiences</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="welcome__media fade-in-right">
+            <img src="images/room-royal.png" alt="Comfortable room at The Crown Palace"
+              style="border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Preview Section -->
+    <section class="section section--lg rooms-preview" id="rooms-preview">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Accommodations</span>
+          <h2 class="section-title">Rooms & Suites</h2>
+          <p class="section-subtitle">
+            Each room is a testament to refined luxury, blending traditional Varanasi craftsmanship with modern
+            comforts.
+          </p>
+        </div>
+
+        <div class="rooms-preview__grid">
+          <article class="card fade-in">
+            <div class="card__image">
+              <img src="images/room-deluxe.png" alt="Deluxe Ganga View Room with traditional decor and river views"
+                loading="lazy">
+            </div>
+            <div class="card__content">
+              <span class="card__label">From ₹3,000/night</span>
+              <h3 class="card__title">Deluxe Ganga View</h3>
+              <p class="card__text">
+                Wake up to breathtaking views of the sacred Ganges. Features traditional Banarasi silk accents and
+                handcrafted furniture.
+              </p>
+              <div class="card__meta">
+                <span class="card__meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                    <path d="M16 7V5a4 4 0 0 0-8 0v2" />
+                  </svg>
+                  45 sqm
+                </span>
+                <span class="card__meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 4v16M22 4v16M6 4h12M6 20h12M2 12h20" />
+                  </svg>
+                  King Bed
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card__image">
+              <img src="images/room-royal.png" alt="Royal Palace Suite with opulent royal decor" loading="lazy">
+            </div>
+            <div class="card__content">
+              <span class="card__label">From ₹4,000/night</span>
+              <h3 class="card__title">Royal Palace Suite</h3>
+              <p class="card__text">
+                Our signature suite offers palatial luxury with hand-painted ceilings, antique furnishings, and a
+                private terrace overlooking the ghats.
+              </p>
+              <div class="card__meta">
+                <span class="card__meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                    <path d="M16 7V5a4 4 0 0 0-8 0v2" />
+                  </svg>
+                  120 sqm
+                </span>
+                <span class="card__meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 4v16M22 4v16M6 4h12M6 20h12M2 12h20" />
+                  </svg>
+                  King Bed
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card__image">
+              <img src="images/room-deluxe.png" alt="Premium Heritage Suite combining heritage charm with luxury"
+                loading="lazy">
+            </div>
+            <div class="card__content">
+              <span class="card__label">From ₹3,500/night</span>
+              <h3 class="card__title">Premium Heritage Suite</h3>
+              <p class="card__text">
+                Spacious accommodations featuring a separate living area, marble bathroom with copper tub, and stunning
+                sunrise views.
+              </p>
+              <div class="card__meta">
+                <span class="card__meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                    <path d="M16 7V5a4 4 0 0 0-8 0v2" />
+                  </svg>
+                  75 sqm
+                </span>
+                <span class="card__meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 4v16M22 4v16M6 4h12M6 20h12M2 12h20" />
+                  </svg>
+                  King Bed
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-lg">
+          <a href="rooms.html" class="btn btn--primary">View All Rooms</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences Preview Section -->
+    <section class="section section--lg section--charcoal" id="experiences-preview">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" style="color: var(--gold);">Curated Experiences</span>
+          <h2 class="section-title">Discover Varanasi</h2>
+          <p class="section-subtitle" style="color: var(--cream);">
+            Immerse yourself in the spiritual and cultural tapestry of one of the world's oldest living cities.
+          </p>
+        </div>
+
+        <div class="experiences-preview__grid">
+          <article class="experience-card fade-in">
+            <div class="experience-card__image">
+              <img src="images/experience-aarti.png" alt="Private Ganga Aarti ceremony experience at Dashashwamedh Ghat"
+                loading="lazy">
+            </div>
+            <div class="experience-card__overlay"></div>
+            <div class="experience-card__content">
+              <h3 class="experience-card__title">Private Ganga Aarti</h3>
+              <p class="experience-card__text">
+                Witness the ancient fire ritual from an exclusive riverside setting with our expert cultural guide.
+              </p>
+              <a href="experiences.html" class="experience-card__link">
+                Learn More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="experience-card fade-in">
+            <div class="experience-card__image">
+              <img src="images/experience-boat.png" alt="Serene sunrise boat ride on the Ganges river" loading="lazy">
+            </div>
+            <div class="experience-card__overlay"></div>
+            <div class="experience-card__content">
+              <h3 class="experience-card__title">Sunrise Boat Ride</h3>
+              <p class="experience-card__text">
+                Glide along the sacred waters as the sun illuminates the ancient ghats in golden light.
+              </p>
+              <a href="experiences.html" class="experience-card__link">
+                Learn More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="experience-card fade-in">
+            <div class="experience-card__image">
+              <img src="images/experience-yoga.png" alt="Yoga and meditation session in traditional garden setting"
+                loading="lazy">
+            </div>
+            <div class="experience-card__overlay"></div>
+            <div class="experience-card__content">
+              <h3 class="experience-card__title">Ayurvedic Wellness</h3>
+              <p class="experience-card__text">
+                Rejuvenate body and soul with traditional yoga, meditation, and authentic Ayurvedic therapies.
+              </p>
+              <a href="experiences.html" class="experience-card__link">
+                Learn More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-lg">
+          <a href="experiences.html" class="btn btn--outline-gold">All Experiences</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Teaser Section -->
+    <section class="section section--lg" id="location">
+      <div class="container">
+        <div class="location-teaser">
+          <div class="location-teaser__map fade-in-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.7168774774465!2d83.01780559149609!3d25.319179983959174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sKaal%20Bhairav%20Mandir!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="The Crown Palace location map">
+            </iframe>
+          </div>
+
+          <div class="location-teaser__content fade-in-right">
+            <span class="section-label">Prime Location</span>
+            <h2 class="section-title">Gateway to Sacred Varanasi</h2>
+            <div class="divider"></div>
+            <p>
+              Conveniently located near Kaal Bhairav Mandir, The Crown Palace offers easy
+              access to the city's most revered spiritual sites and cultural landmarks.
+            </p>
+
+            <div class="location-teaser__landmarks">
+              <div class="location-teaser__landmark">
+                <svg class="location-teaser__landmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span class="location-teaser__landmark-name">Dashashwamedh Ghat</span>
+                <span class="location-teaser__landmark-distance">200 m</span>
+              </div>
+              <div class="location-teaser__landmark">
+                <svg class="location-teaser__landmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span class="location-teaser__landmark-name">Kashi Vishwanath Temple</span>
+                <span class="location-teaser__landmark-distance">500 m</span>
+              </div>
+              <div class="location-teaser__landmark">
+                <svg class="location-teaser__landmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span class="location-teaser__landmark-name">Sarnath</span>
+                <span class="location-teaser__landmark-distance">10 km</span>
+              </div>
+              <div class="location-teaser__landmark">
+                <svg class="location-teaser__landmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span class="location-teaser__landmark-name">Varanasi Airport</span>
+                <span class="location-teaser__landmark-distance">25 km</span>
+              </div>
+            </div>
+
+            <a href="city-map.html" class="btn btn--secondary">Explore Varanasi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">The Crown <span>Palace</span></div>
+          <p class="footer__tagline">Your Comfortable Stay in the Holy City</p>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-bottom: 1rem;">
+            Experience the spiritual heart of India from our comfortable property near Kaal Bhairav Mandir.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#2C2C2C" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="rooms.html" class="footer__link">Rooms & Suites</a></li>
+            <li><a href="experiences.html" class="footer__link">Experiences</a></li>
+            <li><a href="city-map.html" class="footer__link">Explore Varanasi</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Experiences</h4>
+          <ul class="footer__links">
+            <li><a href="experiences.html" class="footer__link">Ganga Aarti</a></li>
+            <li><a href="experiences.html" class="footer__link">Boat Rides</a></li>
+            <li><a href="experiences.html" class="footer__link">Temple Tours</a></li>
+            <li><a href="experiences.html" class="footer__link">Ayurvedic Spa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__title">Contact</h4>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Near Kaal Bhairav Mandir,<br>Varanasi, UP 221001, India</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+91 8176806309</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>reservations@thecrownpalace.com</span>
+          </div>
+
+          <div class="newsletter">
+            <h4 class="footer__title" style="margin-top: 1rem;">Newsletter</h4>
+            <form class="newsletter__form" onsubmit="return false;">
+              <input type="email" class="newsletter__input" placeholder="Enter your email"
+                aria-label="Email for newsletter">
+              <button type="submit" class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 The Crown Palace. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Service</a>
+          <a href="#" class="footer__legal-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/utils.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
