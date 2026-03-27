@@ -1,1 +1,37 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8C547"/>
+      <stop offset="100%" style="stop-color:#B8941E"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#2C2C2C"/>
+  
+  <!-- Decorative Border -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  
+  <!-- Temple/Ghat Silhouette -->
+  <g fill="url(#goldGrad)">
+    <!-- Main Temple Spire -->
+    <path d="M32 14 L28 26 L36 26 Z"/>
+    <rect x="27" y="26" width="10" height="4"/>
+    
+    <!-- Side Elements -->
+    <path d="M22 22 L19 28 L25 28 Z"/>
+    <path d="M42 22 L39 28 L45 28 Z"/>
+    
+    <!-- Base/Steps -->
+    <rect x="16" y="30" width="32" height="3" rx="1"/>
+    <rect x="14" y="35" width="36" height="3" rx="1"/>
+    <rect x="12" y="40" width="40" height="3" rx="1"/>
+    
+    <!-- Water Waves -->
+    <path d="M10 48 Q16 45 22 48 Q28 51 34 48 Q40 45 46 48 Q52 51 54 48" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Letter H -->
+  <text x="32" y="56" text-anchor="middle" font-family="serif" font-size="10" font-weight="bold" fill="url(#goldGrad)">H</text>
+</svg>
